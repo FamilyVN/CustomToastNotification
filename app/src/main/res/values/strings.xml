@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Custom Toast Notification</string>
+    <string name="action_show_toast">Show Toast</string>
 </resources>

@@ -3,14 +3,23 @@
         xmlns:tools="http://schemas.android.com/tools"
         tools:context="com.tuananh.library.custom.toast.notification.MainActivity">
 
+    <data>
+
+        <variable
+            name="listener"
+            type="com.tuananh.library.custom.toast.notification.MainActivity"/>
+    </data>
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal">
 
-        <TextView
+        <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Hello World!"/>
+            android:onClick="@{() -> listener.onShowToast()}"
+            android:text="@string/action_show_toast"/>
 
     </LinearLayout>
 </layout>
