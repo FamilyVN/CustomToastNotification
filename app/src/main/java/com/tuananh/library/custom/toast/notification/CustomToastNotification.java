@@ -80,7 +80,8 @@ public class CustomToastNotification extends LinearLayout {
         mBinding.notificationBackground.setBackgroundResource(resId);
     }
 
-    public void setIcon(int resId) {
+    public CustomToastNotification setIcon(int resId) {
         mBinding.iconToast.setImageResource(resId);
+        return this;
     }
 }
